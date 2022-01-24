@@ -1,0 +1,7 @@
+ul{
+    display: flex;   
+}
+ul>li{
+    padding: 10px;    
+}
+
