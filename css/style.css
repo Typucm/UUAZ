@@ -1,6 +1,8 @@
 ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 ul>li{
     padding: 10px;    
