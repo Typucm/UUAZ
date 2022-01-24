@@ -1,7 +1,22 @@
 ul{
-    display: flex;   
+    display: flex;
+    flex-wrap: wrap;
 }
 ul>li{
     padding: 10px;    
+}
+.left{
+    padding: 20px;
+}
+.right{
+    padding: 20px;
+}
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.midleHeader{
+    padding: 10px;
+    text-align: center;
 }
 
