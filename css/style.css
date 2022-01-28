@@ -86,20 +86,32 @@ nav{
     display: flex;
     justify-content: space-evenly;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) and (min-width: 767px) {
     .сontainer{
-        max-width: 767px;        
+        width: 100%;        
+    }
+    .content{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .main_today{
+        max-width: 75%;        
+    }
+    .news{
+        max-width: 25%;
+    }
+
+}
+@media (max-width: 767px){
+    .сontainer{
+        width: 100%;
     }
     .content{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-    }    
-
-}
-@media (max-width: 767px) {
-    .сontainer{
-        max-width: 500px;
     }
 
 }
