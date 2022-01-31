@@ -1,8 +1,11 @@
-ul{
+.menu{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: inherit;  
+}
+.menu a{
+    color: black;
 }
 .wrapper{
     display: flex;
@@ -59,7 +62,18 @@ nav{
 }
 .main_today>h2{
     text-align: center;
-    font-weight: bold
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.main_today li{
+    background: rgb(247, 245, 242);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px gray;
+}
+.main_today a{
+    color: black;
 }
 .news{
     min-width: 25%;
@@ -68,10 +82,21 @@ nav{
 .news>h2{
     text-align: center;
     font-weight: bold;
+    padding-bottom: 10px;
 }
 .news>ul{
     display: block;
-    text-align: center;
+    text-align: justify;
+}
+.news li{
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(247, 245, 242);
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px gray;    
+}
+.news a{
+    color: black;
 }
 .content_item{
     text-align: justify;
@@ -79,9 +104,9 @@ nav{
     padding: 10px;
 }
 .content_item>ul{
-    text-align: center;
-    font-weight: bold;
+    text-align: justify;    
 }
+
 .footer{
     display: flex;
     justify-content: space-evenly;
