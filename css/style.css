@@ -1,12 +1,4 @@
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: inherit;  
-}
-.menu a{
-    color: black;
-}
+
 .wrapper{
     display: flex;
     min-height: 1000px;
@@ -16,13 +8,6 @@
 .сontainer{
     max-width: none;
     margin: 0 auto;
-}
-
-nav>ul>li{
-    padding: 10px;    
-}
-ul.li>a:hover{
-    background: #9d2235;       
 }
 .left{
     padding: 20px;
