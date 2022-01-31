@@ -5,6 +5,52 @@
     overflow: hidden;
     flex-direction: column;
 }
+.menu{
+}
+.menu li{
+    position: relative;
+}
+.menu__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.menu__list>li:hover .sub-menu__list{
+display: block;
+min-width: 170px;
+}
+.menu__list>li:hover{
+    background-color: brown;
+    min-width: 170px;
+}
+.menu__list>li:hover .menu__link{
+    color: white; 
+    background-color: brown;
+    min-width: 170px;
+}
+.menu__link{
+    color: black;
+    padding: 10px;
+}
+.menu__link:hover{
+background-color: brown;
+min-width: 170px;
+}
+.sub-menu__list{
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    flex-wrap: nowrap;
+    }
+.sub-menu__list>li{
+    background-color: brown;
+    padding: 5px;
+}
+.sub-menu__link{
+color: white;   
+padding: 10px;
+}
 .сontainer{
     max-width: none;
     margin: 0 auto;
@@ -20,17 +66,17 @@
     justify-content: space-between;
     background: white;
     width: 100%;
-    border-bottom: solid 1px rgb(226, 224, 224);    
+    /* border-bottom: solid 1px rgb(226, 224, 224);     */
 }
 .midleHeader{
     padding: 10px;
     width: 100%;
     text-align: center;
-    border-bottom: solid 1px rgb(226, 224, 224);
+    /* border-bottom: solid 1px rgb(226, 224, 224); */
 }
 nav{
     width: 100%;
-    border-bottom: solid 1px rgb(226, 224, 224);
+    /* border-bottom: solid 1px rgb(226, 224, 224); */
 }
 .baner{
     padding: 10px;
@@ -112,6 +158,9 @@ nav{
     .news{
         max-width: 25%;
     }
+    .menu__list{
+        display: block;
+    }
 
 }
 @media (max-width: 767px){
@@ -122,6 +171,9 @@ nav{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+    }
+    .menu__list{
+        display: block;
     }
 
 }
