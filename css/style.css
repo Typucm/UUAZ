@@ -1,12 +1,15 @@
 .main__section{
-    display: block;
-    overflow: hidden;
-    height: 100%;       
-}
-.main__section img{
-    object-fit: cover;
+    display: block;    
     height: 100%;
+    /* overflow: hidden;      */
+}
+.background-image{
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.background-image img{
+    width: 120%;    
 }
 .logoVR svg{
     fill: white;
@@ -77,25 +80,25 @@ transition: 0.1s;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    top: 55px; 
+    top: 53px; 
     width: 100%;
     padding: 50px;   
 }
 .entryForm{
     height: 450px;
     width: 350px;
-    background-color: white;
+    background-color: brown;
     margin-top: 100px;
 }
 .logo__UUAZ{
     background-color: rgb(165, 42, 42, 0.7);
     transition: 0.1s;
-    height: 155px;
-    margin-top: 172px;
+    height: 170px;
+    margin-top: 172px;    
 }
 .logo__UUAZ svg{
     fill: white;
-    padding: 10px;
+    margin: 10px;
     transition: 0.5s;   
 }
 .logo__UUAZ svg:hover{
@@ -110,4 +113,61 @@ transition: 0.1s;
     font-size: 20px;
     padding-top: 20px;
     padding-bottom: 15px;
+}
+
+/* Медиазапросы */
+@media(max-width: 767px){
+    .logo__UUAZ{
+    background-color: rgb(165, 42, 42, 0.7);
+    transition: 0.1s;
+    height: 130px;
+    margin-top: 0px;
+    width: 280px;
+    }
+    .logo__UUAZ svg{
+        fill: white;
+        margin: 10px;
+        transition: 0.5s;
+        height: 50px;
+        width: 260px;
+        
+    }
+    .slogan{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menu__list{
+        display: none;
+    }
+    .entry{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 70px; 
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
+    }
+    .entryForm{
+        height: 300px;
+        width: 50%;
+        max-width: 300px;
+        background-color: rgb(165, 42, 42, 0.7);
+        margin-top: 0px;
+    }
+    .background-image{
+        min-height: 450px;
+        max-height: 750px;
+        height: 100%;
+    }
+    .background-image img{
+        overflow: scroll;
+        object-fit: cover;
+        /* transform: scale(1.5); */
+    }
 }
