@@ -63,6 +63,10 @@ transition: 0.1s;
     background: rgba(85, 43, 43, 0.68);    
     top: 53px;    
 }
+sub-menu__list>li:hover .sub-menu__link{
+    background: rgba(233, 14, 14, 0.68);    
+}
+
 .menu__list>li:hover .menu__link{
     background: rgba(85, 43, 43, 0.68);
 }
