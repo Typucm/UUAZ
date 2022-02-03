@@ -55,6 +55,7 @@ transition: 0.1s;
 .sub-menu__list li{
     padding-top: 10px;
 }
+
 .menu__list>li:hover .sub-menu__list{
     display: block;
     position: absolute;
@@ -74,20 +75,24 @@ sub-menu__list>li:hover .sub-menu__link{
 .entry{
     position: absolute;
     display: flex;
-    top: 200px;
-    left: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 55px; 
     width: 100%;
+    padding: 50px; 
+    z-index: 10;   
 }
 .entryForm{
-    position: absolute;
     height: 450px;
     width: 350px;
     background-color: white;
-    right: 70px;
+    margin-top: 100px;
 }
 .logo__UUAZ{
     background-color: rgb(165, 42, 42, 0.7);
     transition: 0.1s;
+    height: 155px;
+    margin-top: 172px;
 }
 .logo__UUAZ svg{
     fill: white;
