@@ -59,17 +59,14 @@ transition: 0.1s;
 .menu__list>li:hover .sub-menu__list{
     display: block;
     position: absolute;
+
     padding: 0px 10px 10px 10px;
     /*background-color: rgb(165, 42, 42, 0.7);*/    
     background: rgba(85, 43, 43, 0.68);    
     top: 53px;    
 }
-sub-menu__list>li:hover .sub-menu__link{
+.sub-menu__list>li:hover{
     background: rgba(233, 14, 14, 0.68);    
-}
-
-.menu__list>li:hover .menu__link{
-    background: rgba(85, 43, 43, 0.68);
 }
 
 .entry{
