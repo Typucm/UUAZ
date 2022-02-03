@@ -9,7 +9,7 @@
 }
 .menu__link svg{
     fill: white;
-    transition: 0.1s;
+    transition: 0.5s;
 }
 .menu__link svg:hover{
 fill: #353f4a;
@@ -70,11 +70,12 @@ transition: 0.1s;
     top: 200px;
     left: 15px;
     background-color: rgb(165, 42, 42, 0.7);
+    transition: 0.1s;
 }
 .logo__UUAZ svg{
     fill: white;
     padding: 10px;
-    transition: 0.1s;   
+    transition: 0.5s;   
 }
 .logo__UUAZ svg:hover{
     fill: #353f4a;
