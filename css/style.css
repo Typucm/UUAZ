@@ -61,3 +61,27 @@ transition: 0.1s;
     background-color: rgb(165, 42, 42, 0.7);
     top: 53px;
 }
+.logo__UUAZ{
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    background-color: rgb(165, 42, 42, 0.7);
+}
+.logo__UUAZ svg{
+    fill: white;
+    padding: 10px;
+    transition: 0.1s;   
+}
+.logo__UUAZ svg:hover{
+    fill: #353f4a;
+    transition: 0.1s;
+}
+.slogan{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
