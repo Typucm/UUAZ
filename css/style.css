@@ -1,21 +1,19 @@
 .images{
     overflow: hidden;
-    height: 100%;    
+    height: 100%;       
 }
 .images img{
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
-.logo{
-    max-height: 40px;
-    list-style: none;
-}
 .menu__link svg{
     fill: white;
+    transition: 0.1s;
 }
 .menu__link svg:hover{
 fill: #353f4a;
+transition: 0.1s;
 }
 .сontainer{
     position: absolute;
@@ -23,37 +21,43 @@ fill: #353f4a;
     margin: 0 auto;
     width: 100%;
 }
+.menu__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .menu{
-    padding: 20px;
+    padding: 5px;
     background-color: rgb(165, 42, 42, 0.7);
+    display: flex;
 }
 .menu__list{
     display: flex;
     flex-wrap: wrap;
 }
 .menu__link{
-    padding-left: 20px;
     color: white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;    
+    font-size: 20px;
+    padding: 15px; 
 }
 .sub-menu__list{
     display: none;    
 }
 .sub-menu__link{
-color: white;
-font-weight: bold;
-font-size: 14px;
-font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .sub-menu__list li{
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .menu__list>li:hover .sub-menu__list{
     display: block;
     position: absolute;
-    padding: 10px;
+    padding: 0px 10px 10px 10px;
     background-color: rgb(165, 42, 42, 0.7);
-    top: 80px;
+    top: 53px;
 }
