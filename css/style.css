@@ -62,6 +62,9 @@ transition: 0.1s;
     background: rgba(85, 43, 43, 0.68);    
     top: 53px;    
 }
+.menu__list>li:hover .menu__link{
+    background: rgba(85, 43, 43, 0.68);
+}
 .logo__UUAZ{
     position: absolute;
     top: 200px;
