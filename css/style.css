@@ -36,6 +36,9 @@ transition: 0.1s;
     display: flex;
     flex-wrap: wrap;
 }
+.menu__list>li:hover .menu__link{
+    background-color: rgba(85, 43, 43, 0.68);
+}
 .menu__link{
     color: white;
     font-weight: bold;
@@ -59,8 +62,7 @@ transition: 0.1s;
 
 .menu__list>li:hover .sub-menu__list{
     display: block;
-    position: absolute;
-    /*background-color: rgb(165, 42, 42, 0.7);*/    
+    position: absolute;  
     background: rgba(85, 43, 43, 0.68);    
     top: 53px;
     z-index: 10; 
