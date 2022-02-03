@@ -1,17 +1,18 @@
-.images{
+.main__section{
+    display: block;
     overflow: hidden;
     height: 100%;       
 }
-.images img{
+.main__section img{
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
-.menu__link svg{
+.logoVR svg{
     fill: white;
     transition: 0.5s;
 }
-.menu__link svg:hover{
+.logoVR svg:hover{
 fill: #353f4a;
 transition: 0.1s;
 }
@@ -65,10 +66,22 @@ transition: 0.1s;
 .menu__list>li:hover .menu__link{
     background: rgba(85, 43, 43, 0.68);
 }
-.logo__UUAZ{
+
+.entry{
     position: absolute;
+    display: flex;
     top: 200px;
     left: 15px;
+    width: 100%;
+}
+.entryForm{
+    position: absolute;
+    height: 450px;
+    width: 350px;
+    background-color: white;
+    right: 70px;
+}
+.logo__UUAZ{
     background-color: rgb(165, 42, 42, 0.7);
     transition: 0.1s;
 }
