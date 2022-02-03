@@ -70,9 +70,11 @@ transition: 0.1s;
 .entry{
     position: absolute;
     display: flex;
+    flex-wrap: wrap;
     top: 200px;
     left: 15px;
     width: 100%;
+
 }
 .entryForm{
     position: absolute;
