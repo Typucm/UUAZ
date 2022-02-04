@@ -93,15 +93,26 @@ transition: 0.1s;
 .logo__UUAZ{
     background-color: rgb(165, 42, 42, 0.7);
     transition: 0.1s;
-    height: 170px;
-    margin-top: 172px;    
+    height: 140px;
+    margin-top: 150px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.logo__UUAZ svg{
+.logoSVG{    
+    width: 100%;
+    height: 100px;
+}
+.logoSVG svg{
     fill: white;
-    margin: 10px;
-    transition: 0.5s;   
+    height: 100%;
+    padding: 10px;
+    transition: 0.5s;
+    width: 100%; 
+    
 }
-.logo__UUAZ svg:hover{
+.logoSVG svg:hover{
     fill: #353f4a;
     transition: 0.1s;
 }
@@ -111,12 +122,11 @@ transition: 0.1s;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding: 10px; 
 }
-
+/* and (max-wIdth: 500px) */
 /* Медиазапросы */
-@media(max-width: 767px){
+@media(max-width: 767px) and (min-width: 640px) {
     .logo__UUAZ{
     background-color: rgb(165, 42, 42, 0.7);
     transition: 0.1s;
@@ -124,13 +134,14 @@ transition: 0.1s;
     margin-top: 0px;
     width: 280px;
     }
-    .logo__UUAZ svg{
+    .logoSVG{
+        height: 70px;
+    }
+    .logoSVG svg{
         fill: white;
-        margin: 10px;
         transition: 0.5s;
-        height: 50px;
-        width: 260px;
-        
+        height: 100%;
+        width: 100%;        
     }
     .slogan{
         color: white;
@@ -145,7 +156,7 @@ transition: 0.1s;
         display: none;
     }
     .entry{
-    position: absolute;
+    position: absolute;    
     display: flex;
     justify-content: space-between;
     top: 70px; 
@@ -154,11 +165,11 @@ transition: 0.1s;
     margin: 0px;
     }
     .entryForm{
+        position: relative;
         height: 300px;
-        width: 50%;
-        max-width: 300px;
+        width: 300px;
         background-color: rgb(165, 42, 42, 0.7);
-        margin-top: 0px;
+        margin-top: 0px;        
     }
     .background-image{
         min-height: 450px;
@@ -168,6 +179,14 @@ transition: 0.1s;
     .background-image img{
         overflow: scroll;
         object-fit: cover;
-        /* transform: scale(1.5); */
+        
     }
+}
+@media(max-width:1385px){
+    .menu__list{
+        display: none;
+    }
+}
+@media{
+    
 }
