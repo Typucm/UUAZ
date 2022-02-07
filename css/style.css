@@ -1,10 +1,9 @@
 .main__section{
     display: block;    
-    height: 100%;
-    overflow: hidden;     
-}
-body{
-    background: url('../source/images/top.jpg') 0% 50% / cover no-repeat;
+    height: 780px;
+    overflow: hidden;   
+    background: url('../source/images/top.jpg') 50% 0% / cover no-repeat;
+    z-index: 0;
 }
 .logoVR{
     padding-right: 20px;
@@ -32,6 +31,7 @@ transition: 0.1s;
     padding: 10px;
     background-color: rgb(165, 42, 42, 0.7);
     display: flex;
+    width: 100%;
 }
 .menu__list{
     display: flex;
@@ -85,7 +85,7 @@ transition: 0.1s;
     .entryForm{
         height: 450px;
         width: 350px;
-        background-color: brown;
+        background-color: rgb(165, 42, 42, 0.7);;
         margin-top: 100px;
 }
 .logo__UUAZ{
@@ -122,7 +122,49 @@ transition: 0.1s;
     font-size: 20px;
     padding: 10px; 
 }
-/* and (max-wIdth: 500px) */
+.content{
+    display: flex;
+}
+.content__MainToday{
+    width: 65%;
+    height: 500px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    margin: 10px;
+}
+.content__title{
+    text-align: center;
+    height: 30px; 
+}
+.content__news{
+    -webkit-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    margin: 10px;
+    padding: 10px;
+}
+.content__item{
+    -webkit-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.2);
+    margin: 10px;
+    padding: 10px;
+}
+.content__item .content__title{
+    margin: 10px;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #353f4a;
+    height: 250px;
+}
+.footer__item{
+    margin: 20px;
+    color: white;
+}
 /* Медиазапросы */
 @media(max-width: 767px) and (min-width: 640px) {
     .logo__UUAZ{
@@ -192,15 +234,16 @@ transition: 0.1s;
     .entryForm{     
         height: 450px;
         width: 350px;
-        background-color: brown;
+        background-color: rgb(165, 42, 42, 0.7);;
         margin-top: 0px;
     }
     .logoSVG{
         height: 90px;
     }
-    body{
-        background-position: right;
-        background: url('../source/images/top.jpg') 20% 0% / cover no-repeat;
+}
+@media (max-width:1200px){
+    .main__section{
+    background: url('../source/images/top.jpg') 50% 0% / cover no-repeat;
     }
 }
 @media(max-width: 940px) and (min-width: 910px) {
@@ -220,12 +263,8 @@ transition: 0.1s;
 .entryForm{     
     height: 450px;
     width: 350px;
-    background-color: brown;
+    background-color: rgb(165, 42, 42, 0.7);;
     margin-top: 0px;
-}
-body{
-    background-position: right;
-    background: url('../source/images/top.jpg') 20% 0% / cover no-repeat;
 }
 }
 @media(max-width: 909px) and (min-width: 880px) {
@@ -260,12 +299,8 @@ body{
     .entryForm{     
         height: 450px;
         width: 350px;
-        background-color: brown;
+        background-color: rgb(165, 42, 42, 0.7);;
         margin-top: 0px;
-    }
-    body{
-        background-position: right;
-        background: url('../source/images/top.jpg') 20% 0% / cover no-repeat;
     }
 }
 @media(max-width: 879px) and (min-width: 850px) {
@@ -300,14 +335,125 @@ body{
 .entryForm{     
     height: 450px;
     width: 350px;
-    background-color: brown;
+    background-color: rgb(165, 42, 42, 0.7);;
     margin-top: 0px;
 }
-body{
-    background-position: right;
-    background: url('../source/images/top.jpg') 20% 0% / cover no-repeat;
+}
+@media(max-width: 850px) and (min-width: 767px) {
+    .logo__UUAZ{
+        background-color: rgb(165, 42, 42, 0.7);
+        transition: 0.1s;
+        height: 150px;
+        margin-top: 0px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+.logoSVG{
+    height: 90px;
+}
+.logoSVG svg{
+    fill: white;
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;        
+}
+.slogan{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.entryForm{     
+    height: 450px;
+    width: 300px;
+    background-color: rgb(165, 42, 42, 0.7);;
+    margin-top: 0px;
 }
 }
+
+@media(max-width:639px) and (min-width:425px){
+    .logo__UUAZ{
+        background-color: rgb(165, 42, 42, 0.7);
+        transition: 0.1s;
+        height: 120px;
+        margin-top: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+.logoSVG{
+    height: 80px;
+}
+.entry{
+    justify-content: center;
+    padding: 20px;
+}
+.entryForm{     
+    height: 300px;
+    width: 300px;
+    background-color: rgb(165, 42, 42, 0.7);;
+    margin-top: 0px;
+}
+}
+@media(max-width:425px) and (min-width:320px){
+    .logo__UUAZ{
+        background-color: rgb(165, 42, 42, 0.7);
+        transition: 0.1s;
+        height: 130px;
+        margin-top: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+.logoSVG{
+    height: 80px;
+}
+.logoSVG svg{
+    height: 80px;
+}
+.entry{
+    justify-content: center;
+    padding: 20px;
+}
+.entryForm{     
+    height: 300px;
+    width: 300px;
+    background-color: rgb(165, 42, 42, 0.7);;
+    margin-top: 0px;
+}
+.slogan{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+}
+@media(max-width:320px) and (min-width:200px){
+    .сontainer{
+        position: absolute;
+        top: 0px;
+        margin: 0 auto;
+        width: 320px;
+        min-width: 170px;
+    }
+    .entry{
+        justify-content: center;
+        padding: 5px;
+    }
+}
+
 
 
 /* @media(max-width:1660px) and (min-width:1385px){
