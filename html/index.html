@@ -98,7 +98,18 @@
                     <div class="slogan">БЫТЬ НА ВЫСОТЕ - НАША РАБОТА!</div>
                 </div>
                 <div class="entryForm">
-                    Личный кабинет
+                    <div class="entryForm__container">
+                        <h1>Личный кабинет</h1>
+                        <div class="entryForm__form">
+                            <form action="../php/auth.php" method="post">
+                                <input type="text" name="login" id="login" placeholder="Введите логин">
+                                <input type="password" name="password" id="password" placeholder="Введите пароль">
+                                <button type="submit" name="submit" id="submit">Вход</button>
+                            </form>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </section>

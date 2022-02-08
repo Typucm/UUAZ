@@ -70,7 +70,8 @@ transition: 0.1s;
     z-index: 10; 
 }
 .sub-menu__list>li:hover{
-    background: rgba(233, 14, 14, 0.68);    
+    background: rgba(233, 14, 14, 0.68);   
+    transition: 0.1s; 
 }
 
 .entry{
@@ -83,13 +84,15 @@ transition: 0.1s;
     padding: 50px;   
 }
     .entryForm{
-        height: 450px;
+        height: 200px;
         width: 350px;
-        background-color: rgb(165, 42, 42, 0.7);;
+        background-color: rgb(165, 42, 42, 0.9);
+        border-radius: 10px;
         margin-top: 100px;
 }
 .logo__UUAZ{
-    background-color: rgb(165, 42, 42, 0.7);
+    background-color: rgb(165, 42, 42, 0.9);
+    border-radius: 10px;
     transition: 0.1s;
     height: 200px;
     margin-top: 150px;
@@ -177,6 +180,42 @@ transition: 0.1s;
 .footer__item{
     margin: 20px;
     color: white;
+}
+.entryForm__container{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+.entryForm__container h1{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.entryForm__form input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+    }
+.entryForm input{
+        height: 30px;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 15px;
+}
+button{
+    height: 30px;
+    border-radius: 5px;
+    width: 50px;
+    transition: 0.1s; 
+}
+button:hover{
+    background-color: #353f4a;
+    transition: 0.1s;
 }
 /* Медиазапросы */
 @media(max-width: 767px) and (min-width: 640px) {
