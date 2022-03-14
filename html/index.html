@@ -1,163 +1,152 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-Ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
     <link rel="stylesheet" href="..\css\style.css">
-    <link rel="stylesheet" href="..\css\zero.css">
     <link rel="shortcut icon" href="/source/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/js/ChiefSlider/chief-slider.min.css">
+    <script defer src="/js/ChiefSlider/chief-slider.min.js"></script>
 
     <title>Главная</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <section class="main__section">
-            <header>
-                <div class="сontainer">
-                    <nav class="menu">
-                        <div class="logoVR">
-                            <a href="https://www.rhc.aero/">
-                                <svg width="170" height="40">
-                                    <use xlink:href="/source/images/sprite.svg#logoVR"></use>
+    <div class="wrapper" id="wrapper">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="top__menu">
+                    <div class="logo__type">
+                        <div class="logo">
+                            <a href="">
+                                <svg width="65px" height="50px">
+                                    <use xlink:href="/source/images/sprite.svg#Logo"></use>
                                 </svg>
                             </a>
+                            <div class="link">
+                                <div class="link__UUAZ">
+                                    <a href="">улан-удэнский<br>авиационный завод</a>
+                                </div>
+                                <div class="link__VR">
+                                    <a href="https://www.rhc.aero">холдинг вертолеты россии</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="menu__container">
-                            <ul class="menu__list">
-                                <li>
-                                    <a href="#" class="menu__link">О ПРЕДПРИЯТИИ</a>
-                                    <ul class="sub-menu__list">
-                                        <li><a href="#" class="sub-menu__link">ИСТОРИЯ</a></li>
-                                        <li><a href="#" class="sub-menu__link">РУКОВОДСТВО</a></li>
-                                        <li><a href="#" class="sub-menu__link">СТРУКТУРА</a></li>
-                                        <li><a href="#" class="sub-menu__link">КОРПОРАТИВНЫЙ КОДЕКС</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" class="menu__link">НОВОСТИ</a>
-                                    <ul class="sub-menu__list">
-                                        <li><a href="#" class="sub-menu__link">КОРПОРАЦИИ, ХОЛДИНГА</a></li>
-                                        <li><a href="#" class="sub-menu__link">РЕСПУБЛИКИ, ГОРОДА</a></li>
-                                        <li><a href="#" class="sub-menu__link">ПРЕДПРИЯТИЯ</a></li>
-                                        <li><a href="#" class="sub-menu__link">АРХИВ НОВОСТЕЙ</a></li>
-                                        <li><a href="#" class="sub-menu__link">ПРЕССА О НАС</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="menu__link">ПОЛИТИКА ПРЕДПРИЯТИЯ</a>
-                                    <ul class="sub-menu__list">
-                                        <li><a href="#" class="sub-menu__link">СМК ПРЕДПРИЯТИЯ</a></li>
-                                        <li><a href="#" class="sub-menu__link">СИСТЕМА ТОПАЗ</a></li>
-                                        <li><a href="#" class="sub-menu__link">ОХРАНА ТРУДА</a></li>
-                                        <li><a href="#" class="sub-menu__link">УПРАВЛЕНИЕ БЕЗОПАСНСТИ</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="menu__link">РАБОТА С ПЕРСОНАЛОМ</a>
-                                    <ul class="sub-menu__list">
-                                        <li><a href="#" class="sub-menu__link">НАЗНАЧЕНИЯ</a></li>
-                                        <li><a href="#" class="sub-menu__link">ВАКАНСИИ</a></li>
-                                        <li><a href="#" class="sub-menu__link">ИНФОРМАЦИЯ ДЛЯ СОТРУДНИКОВ</a></li>
-                                        <li><a href="#" class="sub-menu__link">ДОСКА ПОЧЕТА</a></li>
-                                        <li><a href="#" class="sub-menu__link">КОНКУРСЫ</a></li>
-                                        <li><a href="#" class="sub-menu__link">ОБУЧЕНИЕ</a></li>
-                                        <li><a href="#" class="sub-menu__link">ОПРОСЫ</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="menu__link">СОЦРАБОТА</a>
-                                    <ul class="sub-menu__list">
-                                        <li><a href="#" class="sub-menu__link">ПРОФИЛАКТОРИЙ</a></li>
-                                        <li><a href="#" class="sub-menu__link">Д/О «ВОЛНА»;</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#" class="menu__link">ПРОФКОМ</a>
-                                    <ul class="sub-menu__list">
-                                        <li><a href="#" class="sub-menu__link">ПРОФСОЮЗНАЯ ДЕЯТЕЛЬНОСТЬ</a></li>
-                                        <li><a href="#" class="sub-menu__link">МО «ВЗЛЕТ»</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-
-                                </li>
-                            </ul>
-                        </div>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list" id="menu__list">
+                            <li class="menu__link " id="menu__link"><a href="#">Главная</a></li>
+                            <li class="menu__link" id="menu__link"><a>О предприятии</a>
+                                <ul class="sub-menu__list " id="sub-menu__list">
+                                    <li class="menu__link" id="menu__link"><a href="">История</a></li>
+                                    <li class="menu__link" id="menu__link"><a>Руководство</a>
+                                        <ul class="sub-menu__list " id="sub-menu__list">
+                                            <li class="menu__link" id="menu__link"><a href="">История</a></li>
+                                            <li class="menu__link" id="menu__link"><a>Руководство</a>
+                                                <ul class="sub-menu__list " id="sub-menu__list">
+                                                    <li class="menu__link" id="menu__link"><a href="">История</a></li>
+                                                    <li class="menu__link" id="menu__link"><a>Руководство</a>
+                                                        <ul class="sub-menu__list " id="sub-menu__list">
+                                                            <li class="menu__link" id="menu__link"><a
+                                                                    href="">История</a></li>
+                                                            <li class="menu__link" id="menu__link"><a
+                                                                    href="">Руководство</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__link" id="menu__link"><a href="#">Вакансии</a>
+                            </li>
+                            <li class="menu__link" id="menu__link"><a>Направить резюме</a>
+                                <ul class="sub-menu__list " id="sub-menu__list">
+                                    <li class="menu__link" id="menu__link"><a href="">История</a></li>
+                                    <li class="menu__link" id="menu__link"><a>Руководство</a>
+                                        <ul class="sub-menu__list " id="sub-menu__list">
+                                            <li class="menu__link" id="menu__link"><a href="">История</a></li>
+                                            <li class="menu__link" id="menu__link"><a href="">Руководство</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__link" id="menu__link"><a>Фотогалерея</a>
+                                <ul class="sub-menu__list " id="sub-menu__list">
+                                    <li class="menu__link" id="menu__link"><a href="">История</a></li>
+                                    <li class="menu__link" id="menu__link"><a href="">Руководство</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__link" id="menu__link"><a href="#">Личный кабинет</a></li>
+                        </ul>
                     </nav>
+                    <button class="menu__burger">
+                        <!-- id="menu__burger" -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
-            </header>
-            <div class="entry">
-                <div class="logo__UUAZ">
-                    <div class="logoSVG">
-                        <a href="https://www.rhc.aero/">
-                            <svg>
-                                <!-- width="521.63" height="100" -->
-                                <use xlink:href="/source/images/sprite.svg#logoUUAZ"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="slogan">БЫТЬ НА ВЫСОТЕ - НАША РАБОТА!</div>
-                </div>
-                <div class="entryForm">
-                    <div class="entryForm__container">
-                        <h1>Личный кабинет</h1>
-                        <div class="entryForm__form">
-                            <form action="../php/auth.php" method="post">
-                                <input type="text" name="login" id="login" placeholder="Введите логин">
-                                <input type="password" name="password" id="password" placeholder="Введите пароль">
-                                <button type="submit" name="submit" id="submit">Вход</button>
-                            </form>
+                <!-- <div class="slogan">БЫТЬ НА ВЫСОТЕ - НАША РАБОТА!</div> -->
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__items">
+                            <div class="slider__item">
+                            </div>
+                            <div class="slider__item">
+                            </div>
+                            <div class="slider__item">
+                            </div>
+                            <div class="slider__item">
+                            </div>
+                            <div class="slider__item">
+                            </div>
                         </div>
-                        
+                        <a href="#" class="slider__control" data-slide="prev"></a>
+                        <a href="#" class="slider__control" data-slide="next"></a>
+                        <ol class="slider__indicators">
+                            <li data-slide-to="0"></li>
+                            <li data-slide-to="1"></li>
+                            <li data-slide-to="2"></li>
+                            <li data-slide-to="3"></li>
+                            <li data-slide-to="4"></li>
+                        </ol>
                     </div>
-                    
                 </div>
             </div>
-        </section>
-        <section class="content">
-            <div class="content__MainToday">
-                <div class="content__title">Главное сегодня</div>
-                <ul>
-                    <li><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, provident
-                            blanditiis. Vero adipisci voluptatem culpa. Dicta accusantium tempore cum possimus,
-                            explicabo vel! Veniam ad, dolore quaerat itaque rem a et.</a></li>
-                </ul>
-            </div>
-            <div class="content__news">
-                <div class="content__title">Лента новостей</div>
-                <ul>
-                    <li><a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, quas!</a>
-                    </li>
-                    <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, vero dolor
-                            praesentium doloremque iusto quod.</a></li>
-                    <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium inventore
-                            corrupti neque veritatis illum ex amet fugiat, atque recusandae nobis!</a></li>
-                    <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-                    <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque aut rem, neque
-                            accusamus dignissimos temporibus quod consectetur alias corrupti explicabo, fugiat eius
-                            perferendis!</a></li>
-                </ul>
-            </div>
-            <div class="content__item">
-                    <div class="content__item__title">Опрос дня</div>
-                    <div class="content__item__title">Оставить идеи и предложения, а также задать вопрос можно здесь</div>
-                    <div class="content__item__title">Фоторепортажи</div>
-        </section>
-        <footer>
-            <div class="footer">
-                <div class="footer__item">
-                    Фото
+
+            <!-- <section class="slider">
+                <img src="/source/images/img-1208.jpg" alt="123">
+                <div class="container">
+                </div>-->
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about__text">
+
+                    </div>
+                    <div class="about__foto">
+
+                    </div>
                 </div>
-                <div class="footer__item">
-                    Видео
-                </div>
-                <div class="footer__item">
-                    Музыка
-                </div>
-                <div class="footer__item">
-                    Справка
-                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
             </div>
         </footer>
     </div>
+    <script src="/js/scripts.js"></script>
 </body>
+
 </html>
