@@ -7,10 +7,10 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
-    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/source/images/favicon.png" type="image/png">
-    <link rel="stylesheet" href="/js/ChiefSlider/chief-slider.min.css">
-    <script defer src="/js/ChiefSlider/chief-slider.min.js"></script>
+    <!-- <link rel="stylesheet" href="/js/ChiefSlider/chief-slider.min.css"> -->
+    <!-- <script defer src="/js/ChiefSlider/chief-slider.min.js"></script> -->
 
     <title>Главная</title>
 </head>
@@ -23,11 +23,11 @@
                     <div class="logo__type">
                         <div class="logo">
                             <a href="">
-                                <svg width="65px" height="50px">
+                                <svg width="65px" height="50px" id="logo__svg">
                                     <use xlink:href="/source/images/sprite.svg#Logo"></use>
                                 </svg>
                             </a>
-                            <div class="link">
+                            <div class="logo__link">
                                 <div class="link__UUAZ">
                                     <a href="">улан-удэнский<br>авиационный завод</a>
                                 </div>
@@ -83,7 +83,7 @@
                                     <li class="menu__link" id="menu__link"><a href="">Руководство</a></li>
                                 </ul>
                             </li>
-                            <li class="menu__link" id="menu__link"><a href="#">Личный кабинет</a></li>
+                            <li class="menu__link" id="menu__link"><a href="#">вход</a></li>
                         </ul>
                     </nav>
                     <button class="menu__burger">
@@ -99,9 +99,16 @@
         <main class="main">
             <div class="container">
                 <div class="slider">
-                    <div class="slider__wrapper">
+                    <video src="/source/video/1.mp4" autoplay loop muted></video>
+                    <div class="arrow">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- <div class="slider__wrapper">
+                        
                         <div class="slider__items">
                             <div class="slider__item">
+                                
                             </div>
                             <div class="slider__item">
                             </div>
@@ -112,8 +119,8 @@
                             <div class="slider__item">
                             </div>
                         </div>
-                        <a href="#" class="slider__control" data-slide="prev"></a>
-                        <a href="#" class="slider__control" data-slide="next"></a>
+                        <a class="slider__control" data-slide="prev"></a>
+                        <a class="slider__control" data-slide="next"></a>
                         <ol class="slider__indicators">
                             <li data-slide-to="0"></li>
                             <li data-slide-to="1"></li>
@@ -121,24 +128,70 @@
                             <li data-slide-to="3"></li>
                             <li data-slide-to="4"></li>
                         </ol>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-
-            <!-- <section class="slider">
-                <img src="/source/images/img-1208.jpg" alt="123">
-                <div class="container">
-                </div>-->
-            </section>
             <section class="about">
                 <div class="container">
                     <div class="about__text">
-
+                        <div class="about__title">О предприятии</div>
+                        <p>АО «Улан-Удэнский авиационный завод» одно из ведущих предприятий авиационной промышленности и
+                            оборонно-промышленного комплекса России, входит в состав холдинга «Вертолёты России»
+                            Государственной корпорации «Ростех».
+                        </p>
                     </div>
-                    <div class="about__foto">
-
+                    <div class="about__stat">
+                        <div class="about__row">
+                            <div class="about__column">
+                                <p class="about__title">
+                                    >9 000
+                                </p>
+                                <p class="about__sub-title">
+                                    Летательных аппаратов произведено за годы работы предприятия.
+                                </p>
+                            </div>
+                            <div class="about__column">
+                                <p class="about__title">40%</p>
+                                <p class="about__sub-title">Доля предприятия в общем объёме промышленного производства
+                                    Бурятии.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__row">
+                            <div class="about__column">
+                                <p class="about__title">
+                                    60 000
+                                </p>
+                                <p class="about__sub-title">
+                                    Человек – население двух посёлков, жизнедеятельность которых зависит от работы
+                                    предприятия.
+                                </p>
+                            </div>
+                            <div class="about__column">
+                                <p class="about__title">7 000</p>
+                                <p class="about__sub-title">Человек обеспечивает <br>У-УАЗ, крупнейший работодатель в
+                                    Республике Бурятия.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__row">
+                            <div class="about__column">
+                                <p class="about__title">
+                                    18 млн.
+                                </p>
+                                <p class="about__sub-title">
+                                    Ежегодно вкладывается предприятием в поддержку работников в рамках корпоративной
+                                    жилищной программы.
+                                </p>
+                            </div>
+                            <div class="about__column">
+                                <p class="about__title">20 млн.</p>
+                                <p class="about__sub-title">Ежегодно вкладывается предприятием в поддержку работников в
+                                    рамках корпоративной пенсионной программы.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
             </section>
         </main>
         <footer class="footer">
